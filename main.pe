@@ -1,0 +1,40 @@
+_in = "glyphs/u*.svg"
+_out = "Wt-Position.ttf"
+
+_ascent = 512
+_descent = 128
+_bearingL = 0
+_bearingR = 64
+_spaceWidth = 192
+
+_fontname = "Wt-Position-Regular"
+_family = "Wt-Position"
+_humanName = "Wt-Position"
+_weight = "Regular"
+_copyright = "(c) 2019 Yutaka Obuchi (@FMS_Cat)"
+_version = "1.0.0"
+
+New()
+Reencode( "unicode" )
+
+SelectAll()
+SetGlyphChanged( 0 )
+
+Import( _in )
+
+SelectChanged()
+
+RoundToInt()
+RemoveOverlap()
+Simplify()
+
+ScaleToEm( _ascent, _descent )
+SetLBearing( _bearingL, 0 )
+SetRBearing( _bearingR, 0 )
+
+Select( 0x20 )
+SetRBearing( _spaceWidth )
+
+SetFontNames( _fontname, _family, _humanName, _weight, _copyright, _version )
+Generate( _out )
+Quit( 0 )

@@ -1,0 +1,12 @@
+{
+  "name": "Wt-Position",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "node prepare-svg.js && fontforge -script main.pe"
+  },
+  "devDependencies": {
+    "jsdom": "^15.2.1"
+  }
+}

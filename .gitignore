@@ -1,0 +1,3 @@
+/glyphs/*
+!/glyphs/.keep
+/node_modules/
