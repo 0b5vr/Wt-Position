@@ -17,4 +17,5 @@ files.forEach( ( fileName ) => {
   } );
 
   fs.writeFileSync( svgPath, jsdom.window.document.body.innerHTML );
+  console.log( `OK: ${ svgPath }` );
 } );
