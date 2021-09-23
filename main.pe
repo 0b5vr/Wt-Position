@@ -11,7 +11,7 @@ _fontname = "Wt-Position-Regular"
 _family = "Wt-Position"
 _humanName = "Wt-Position"
 _weight = "Regular"
-_copyright = "(c) 2019 Yutaka Obuchi (@FMS_Cat)"
+_copyright = "(c) 2019-2021 0b5vr"
 _version = "1.0.0"
 
 New()
