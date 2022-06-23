@@ -7,6 +7,6 @@
     "build": "node prepare-svg.js && fontforge -script main.pe"
   },
   "devDependencies": {
-    "jsdom": "^15.2.1"
+    "jsdom": "^16.5.0"
   }
 }
